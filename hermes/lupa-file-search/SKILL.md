@@ -19,7 +19,6 @@ pitfalls:
 ## 실행 — CLI를 이 순서로 찾는다
 ```bash
 for c in /Applications/Lupa.app/Contents/MacOS/lupa-search \
-         /Applications/Lupa-dev.app/Contents/MacOS/lupa-search \
          "$(command -v lupa-search 2>/dev/null)"; do
   [ -x "$c" ] && LUPA="$c" && break
 done
