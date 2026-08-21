@@ -1,7 +1,13 @@
 {
   "name": "lupa",
-  "owner": { "name": "Paeyoung Park", "email": "lupa.app.kr@gmail.com" },
-  "metadata": { "description": "Lupa — local file & document search for Claude Code on macOS", "version": "1.0.0" },
+  "owner": {
+    "name": "Paeyoung Park",
+    "email": "lupa.app.kr@gmail.com"
+  },
+  "metadata": {
+    "description": "Lupa — local file & document search for Claude Code on macOS",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "lupa-file-search",
@@ -9,7 +15,16 @@
       "description": "Search your Mac's files by name and document content (Korean-aware, HWP/PDF/Office/OCR) via the Lupa CLI.",
       "version": "1.0.0",
       "category": "productivity",
-      "keywords": ["file-search", "mac", "korean", "hwp", "pdf"]
+      "keywords": [
+        "file-search",
+        "mac",
+        "korean",
+        "hwp",
+        "pdf",
+        "파일검색",
+        "한글",
+        "내용검색"
+      ]
     }
   ]
 }

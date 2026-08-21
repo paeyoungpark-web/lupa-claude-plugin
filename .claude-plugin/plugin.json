@@ -2,9 +2,27 @@
   "name": "lupa-file-search",
   "description": "Find files on your Mac by name, document content (PDF/DOCX/XLSX/PPTX/HWP, scanned PDFs via OCR), folder, date and size using the Lupa search engine — Korean-aware, ~30ms. Requires the Lupa app (Mac App Store).",
   "version": "1.0.0",
-  "author": { "name": "Paeyoung Park", "email": "lupa.app.kr@gmail.com", "url": "https://lupa.kr" },
+  "author": {
+    "name": "Paeyoung Park",
+    "email": "lupa.app.kr@gmail.com",
+    "url": "https://lupa.kr"
+  },
   "homepage": "https://lupa.kr",
   "repository": "https://github.com/paeyoungpark-web/lupa-claude-plugin",
   "license": "MIT",
-  "keywords": ["file-search", "local-search", "mac", "korean", "hwp", "pdf", "ocr", "lupa", "agent"]
+  "keywords": [
+    "file-search",
+    "local-search",
+    "mac",
+    "korean",
+    "hwp",
+    "pdf",
+    "ocr",
+    "lupa",
+    "agent",
+    "파일검색",
+    "문서검색",
+    "한글",
+    "내용검색"
+  ]
 }
