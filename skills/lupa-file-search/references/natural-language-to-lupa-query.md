@@ -61,7 +61,7 @@
 
 3. **CLI 실행**
    ```bash
-   /Volumes/WD_NVMe_1T/DEV/Lupa/cli/lupa-search "변환된_쿼리"
+   lupa-search "변환된_쿼리"
    ```
 
 4. **결과 정렬 및 제시**
