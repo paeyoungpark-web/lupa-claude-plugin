@@ -7,7 +7,12 @@ Lets Claude Code find files on your Mac **by name and by document content** — 
 1. Install **Lupa** from the Mac App Store (v1.0.2+): https://apps.apple.com/kr/app/lupa/id6789231809
 2. In Lupa: register the folders you want searchable (⌘, → 폴더), let it index once.
 3. (Optional) Lupa → Settings → **명령줄 도구 설치** to put `lupa-search` on your PATH.
-4. In Claude Code:
+4. Install the plugin — either from your **terminal**:
+   ```bash
+   claude plugin marketplace add paeyoungpark-web/lupa-claude-plugin
+   claude plugin install lupa-file-search@lupa
+   ```
+   or from **inside a Claude Code session** (slash commands):
    ```
    /plugin marketplace add paeyoungpark-web/lupa-claude-plugin
    /plugin install lupa-file-search@lupa
