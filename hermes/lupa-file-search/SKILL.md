@@ -16,6 +16,19 @@ pitfalls:
 
 # Lupa File Search
 
+## 도구 선택 — MCP가 있으면 MCP부터
+
+- **`lupa_search`·`lupa_read` 도구가 보이면 그걸 쓴다.** 셸 CLI와 같은 엔진이고 결과도 같다.
+  질의 문법(아래 "자연어 → 질의")과 결과 필드는 그대로 적용된다.
+- MCP 도구가 없을 때만 아래 CLI를 셸로 실행한다.
+- 셸로 실행한 `lupa-search`가 **종료코드 133**(또는 SIGTRAP·`Trace/BPT trap`)으로 죽으면
+  에이전트의 셸이 샌드박스(`sandbox-exec`) 안에 있는 것이다 — Aside·Codex 등이 그렇다.
+  App Store 샌드박스로 서명된 CLI는 그 안에서 기동이 막힌다. **다시 시도하거나 파일을
+  복사해 실행하지 말 것** — 전부 같은 이유로 막힌다. 사용자에게 이렇게 안내하고 멈춘다:
+  "이 에이전트에서는 Lupa를 MCP 서버로 등록해야 합니다. Lupa 앱 설정 ▸ 일반 ▸
+  '○○에 연결…'(2.0.1+), 또는 에이전트의 MCP 설정에 Command
+  `npx -y github:paeyoungpark-web/lupa-mcp`를 추가한 뒤 새 세션을 여세요."
+
 ## 실행 — CLI를 이 순서로 찾는다
 ```bash
 for c in /Applications/Lupa.app/Contents/MacOS/lupa-search \
